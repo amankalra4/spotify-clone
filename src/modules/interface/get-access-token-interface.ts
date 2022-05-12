@@ -11,3 +11,9 @@ export type TokenType = "Bearer";
 export interface TokenResponse {
     data: TokenData;
 }
+
+export type IRefreshToken = Omit<TokenData, "refresh_token">
+
+export interface RefreshTokenResponse {
+    data: IRefreshToken
+}
