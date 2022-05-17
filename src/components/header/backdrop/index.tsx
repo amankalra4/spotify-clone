@@ -12,7 +12,7 @@ import {
 } from "./styles";
 import Divider from "@mui/material/Divider";
 import CommonHeader from "../common-header";
-import { divider, logo1 } from "../common-styles";
+import { divider, spotifyLogo } from "../common-styles";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Spotify from "../../../../public/icons/spotify-logo.svg";
 
@@ -50,7 +50,7 @@ export default function SimpleBackdrop() {
               <p>Log out</p>
             </div>
           </div>
-          <Spotify className={logo1} />
+          <Spotify className={spotifyLogo} />
         </div>
       </Backdrop>
     </div>
