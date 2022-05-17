@@ -1,11 +1,11 @@
-import { commonHeaderCSS, commonHeaderCSS1 } from "./styles";
+import { commonHeader, headerContainer } from "./styles";
 
 const CommonHeader = () => {
   return (
-    <div className={commonHeaderCSS1}>
-      <a className={commonHeaderCSS}>Premium</a>
-      <a className={commonHeaderCSS}>Support</a>
-      <a className={commonHeaderCSS}>Download</a>
+    <div className={headerContainer}>
+      <a className={commonHeader}>Premium</a>
+      <a className={commonHeader}>Support</a>
+      <a className={commonHeader}>Download</a>
     </div>
   );
 };

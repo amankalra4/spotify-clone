@@ -1,13 +1,14 @@
-import SimpleBackdrop from "../backdrop";
 import LargeScreenHeader from "../large-screen";
-import { header, largeScreen, mobile, header2 } from "./styles";
+import { headerData, largeScreen, mobile, headerContainer } from "./styles";
 import Spotify from "../../../../public/icons/spotify-logo.svg";
-import { logo1 } from "../common-styles";
+import { spotifyLogo } from "../common-styles";
+import SimpleBackdrop from "../backdrop";
+
 const Header = () => {
   return (
-    <div className={header}>
-      <div className={header2}>
-        <Spotify className={logo1} />
+    <div className={headerContainer}>
+      <div className={headerData}>
+        <Spotify className={spotifyLogo} />
         <div className={largeScreen}>
           <LargeScreenHeader />
         </div>

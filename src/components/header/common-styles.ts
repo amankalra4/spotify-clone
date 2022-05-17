@@ -1,18 +1,18 @@
 import { css } from "@emotion/css";
-import { lgScreen } from "../../modules/libs/css-modules";
+import { lgScreen, lgScreen2 } from "../../modules/libs/css-modules";
 
 export const divider = css`
   border-color: white !important;
   height: 16px !important;
   margin: auto 17px !important;
-  @media (max-width: 991px) {
+  @media (max-width: ${lgScreen2}) {
     margin: 18px 0 40px !important;
     height: 2px !important;
     width: 20px !important;
   }
 `;
 
-export const logo1 = css`
+export const spotifyLogo = css`
   fill: white;
   display: inline-block;
   height: 27px;
