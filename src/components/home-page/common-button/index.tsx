@@ -1,11 +1,17 @@
 import Link from "next/link";
-import { browserLink, playerText } from "./style";
+import { browserLink, buttonText } from "./style";
 
-const CommonButton = ({ buttonText }: { buttonText: string }) => (
+interface ICommonButtonProps {
+  text: string;
+  backgroundColor: string;
+  textColor: string;
+}
+
+const CommonButton = ({ text, backgroundColor, textColor }: ICommonButtonProps) => (
   <Link href="#">
     <a className={browserLink}>
-      <div className={playerText}>
-        <span>{buttonText}</span>
+      <div className={buttonText(backgroundColor, textColor)}>
+        <span>{text}</span>
       </div>
     </a>
   </Link>
