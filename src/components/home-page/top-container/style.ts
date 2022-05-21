@@ -5,6 +5,7 @@ import {
   backgroundImageSmallScreen,
 } from "../../../constants";
 import {
+  hoverColor,
   lgScreen,
   mdScreen,
   smScreen,
@@ -22,32 +23,24 @@ export const container = css`
     background-image: url(${backgroundImageMediumScreen});
     background-position: center center;
     background-size: auto 181%;
-    background-repeat: no-repeat;
   }
 
   @media (min-width: ${xlScreen}) {
     background-size: auto 100%;
-    background-repeat: no-repeat;
     background-image: url(${backgroundImageLargeScreen});
     background-position: right center;
   }
 `;
 
 export const centerSection = css`
-  font-family: Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
   min-height: 480px;
   margin: 0px auto;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
   max-width: 100%;
-  box-sizing: border-box;
-  color: #1ed760;
-  padding: 35px 15px;
+  color: ${hoverColor};
+  padding: 0px 15px;
   @media (min-width: ${mdScreen}) {
     min-height: 600px;
     width: 750px;
-    padding: 75px 15px;
   }
   @media (min-width: ${lgScreen}) {
     width: 970px;
@@ -74,10 +67,9 @@ export const content = css`
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin: 0px 0px 8px;
-    padding: 0px;
+    padding: 70px 0px 0px;
     font-weight: 900;
     text-align: center;
-    padding-top: 70px;
     @media (min-width: ${xlScreen}) {
       text-align: start;
     }
@@ -92,8 +84,6 @@ export const content = css`
 `;
 
 export const subHeading = css`
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
   display: block;
   margin: 16px 0px;
   font-size: 18px;
