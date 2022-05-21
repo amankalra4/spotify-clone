@@ -1,13 +1,10 @@
 import { css } from "@emotion/css";
-import { lgScreen, mdScreen, xlScreen, smScreen, darkRedColor, lighRedHomeBackground } from "../../modules/libs/css-modules";
+import { lgScreen, mdScreen, xlScreen, smScreen, darkRedColor, lighRedHomeBackground } from "../../../modules/libs/css-modules";
 
 const bottomContainer = css`
     background-color: ${lighRedHomeBackground};
     color: ${darkRedColor};
     padding: 150px 0;
-    @media (min-width: ${xlScreen}) {
-        padding: 80px 0;
-    }
 `;
 
 const header = css`

@@ -1,5 +1,5 @@
-import { darkRedColor } from "../../modules/libs/css-modules";
-import CommonButton from "../home-page/common-button";
+import { darkRedColor } from "../../../modules/libs/css-modules";
+import CommonButton from "../common-button";
 import { bottomContainer, header, title, footer } from "./styles";
 
 const BottomSection = () => (

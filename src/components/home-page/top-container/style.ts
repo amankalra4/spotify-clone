@@ -39,13 +39,12 @@ export const centerSection = css`
   color: ${hoverColor};
   padding: 0px 15px;
   @media (min-width: ${mdScreen}) {
-    min-height: 600px;
+    min-height: 500px;
     width: 750px;
   }
   @media (min-width: ${lgScreen}) {
     width: 970px;
   }
-
   @media (min-width: ${xlScreen}) {
     width: 1170px;
   }

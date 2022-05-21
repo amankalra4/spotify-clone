@@ -1,16 +1,11 @@
 import { css } from "@emotion/css";
 
 export const browserLink = css`
-    box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
-    background-color: transparent;
-    border: 0px;
     border-radius: 500px;
     padding: 0px;
-
     @media (min-width: 768px) {
         font-size: 14px;
         line-height: 20px;
@@ -25,6 +20,7 @@ export const browserLink = css`
 export const buttonText = (backgroundColor: string, textColor: string) => {
     return css`
         background-color: ${backgroundColor};
+        transition: all 0.4s ease;
         color: ${textColor};
         border-radius: 500px;
         font-size: inherit;
