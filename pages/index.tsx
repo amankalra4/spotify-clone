@@ -6,6 +6,7 @@ import React from "react";
 import BottomSection from "../src/components/bottom-section";
 import Footer from "../src/components/footer";
 import Header from "../src/components/header/main-header";
+import TopSection from "../src/components/home-page/top-container";
 import {
   apiScope,
   authorizationURL,
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
             <a>click me</a>
           </Link>
         </main>
+        <TopSection />
         <BottomSection />
         <Footer />
       </div>
