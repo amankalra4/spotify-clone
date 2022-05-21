@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { generate } from "randomstring";
 import React from "react";
+import BottomSection from "../src/components/bottom-section";
 import Footer from "../src/components/footer";
 import Header from "../src/components/header/main-header";
 import {
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
             <a>click me</a>
           </Link>
         </main>
+        <BottomSection />
         <Footer />
       </div>
     </>
