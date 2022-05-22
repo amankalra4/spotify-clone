@@ -1,5 +1,4 @@
 import {
-    footerContainer,
     footerNavigation,
     globeContainer,
     logo,
@@ -8,7 +7,8 @@ import {
     otherLinks,
     socialLogoContainer,
     socialLogoImage,
-    socialMediaLogo
+    socialMediaLogo,
+    FooterContainer
 } from "./styles";
 import Spotify from "../../../public/icons/spotify-logo.svg";
 import GlobeLogo from "../../../public/icons/globe-logo.svg";
@@ -40,7 +40,7 @@ const SocialMediaLogo = ({ src, alt }: { src: string; alt: string }) => (
 
 const Footer = () => {
     return (
-        <footer className={footerContainer}>
+        <FooterContainer>
             <nav className={footerNavigation}>
                 <LogoContainer />
                 <div className={navigationLinksContainer}>
@@ -70,7 +70,7 @@ const Footer = () => {
                     <span>&#169; 2022 Spotify AB</span>
                 </div>
             </nav>
-        </footer>
+        </FooterContainer>
     );
 };
 
