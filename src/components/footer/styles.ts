@@ -1,51 +1,6 @@
 import { css } from "@emotion/css";
+import styled from "styled-components";
 import { hoverColor, legalTermsColor, lgScreen, lightGrayColor, mdScreen, xlScreen } from "../../modules/libs/css-modules";
-
-const footerContainer = css`
-    background: #000;
-    padding: 50px 0 20px;
-    dl {
-        padding: 0 15px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-        @media (min-width: ${mdScreen}) {
-            gap: 1.2rem;
-        }
-    }
-    dt {
-        margin: 50px 0 22px;
-        color: ${legalTermsColor};
-        font-size: 12px;
-        font-weight: 900;
-        line-height: 1.4;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        @media (min-width: ${mdScreen}) {
-            margin: 20px 0;
-        }
-    }
-    dd {
-        padding: 3px 0 8px;
-        margin: 0;
-        width: 100%;
-        @media (min-width: ${mdScreen}) {
-            padding: 3px 0 15px;
-        }
-    }
-    a:hover {
-        color: ${hoverColor};
-        cursor: pointer;
-    }
-    > * {
-        color: white;
-    }
-    @media (min-width: ${lgScreen}) {
-        padding: 80px 0 50px;
-    }
-`;
 
 const footerNavigation = css`
     width: 100%;
@@ -177,8 +132,53 @@ const otherLinks = css`
     }
 `;
 
+const FooterContainer = styled.footer`
+    background: #000;
+    padding: 50px 0 20px;
+    dl {
+        padding: 0 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        @media (min-width: ${mdScreen}) {
+            gap: 1.2rem;
+        }
+    }
+    dt {
+        margin: 50px 0 22px;
+        color: ${legalTermsColor};
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        @media (min-width: ${mdScreen}) {
+            margin: 20px 0;
+        }
+    }
+    dd {
+        padding: 3px 0 8px;
+        margin: 0;
+        width: 100%;
+        @media (min-width: ${mdScreen}) {
+            padding: 3px 0 15px;
+        }
+    }
+    a:hover {
+        color: ${hoverColor};
+        cursor: pointer;
+    }
+    > * {
+        color: white;
+    }
+    @media (min-width: ${lgScreen}) {
+        padding: 80px 0 50px;
+    }
+`;
+
 export {
-    footerContainer,
     footerNavigation,
     logoContainer,
     logo,
@@ -187,5 +187,6 @@ export {
     socialMediaLogo,
     socialLogoImage,
     otherLinks,
-    globeContainer
+    globeContainer,
+    FooterContainer
 };
