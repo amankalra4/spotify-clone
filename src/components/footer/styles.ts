@@ -2,136 +2,6 @@ import { css } from "@emotion/css";
 import styled from "styled-components";
 import { hoverColor, legalTermsColor, lgScreen, lightGrayColor, mdScreen, xlScreen } from "../../modules/libs/css-modules";
 
-const footerNavigation = css`
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 10px;
-    @media (min-width: ${mdScreen}) {
-        width: 750px;
-        flex-direction: row;
-        gap: unset;
-        padding: 0;
-    }
-    @media (min-width: ${lgScreen}) {
-        width: 970px;
-    }
-    @media (min-width: ${xlScreen}) {
-        width: 1170px;
-    }
-`;
-
-const logoContainer = css`
-    padding: 0 15px;
-    display: block;
-    @media (min-width: ${mdScreen}) {
-        width: 16.66666667%;
-    }
-    @media (min-width: ${lgScreen}) {
-        min-height: 346px;
-    }
-`;
-
-const logo = css`
-    fill: currentColor;
-    display: inline-block;
-    height: 27px;
-    width: 89px;
-    @media (min-width: ${lgScreen}) {
-        height: 40px;
-        width: 132px;
-    }
-`;
-
-const navigationLinksContainer = css`
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    @media (min-width: ${mdScreen}) {
-        flex-direction: row;
-        gap: 4rem;
-    }
-`;
-
-const socialLogoContainer = css`
-    display: flex;
-    gap: 20px;
-    margin: 120px 15px 15px;
-    @media (min-width: ${lgScreen}) {
-        margin: 0 15px 0 auto;
-    }
-`;
-
-const socialMediaLogo = css`
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: ${lightGrayColor};
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-
-const socialLogoImage = css`
-    background-color: currentColor;
-`;
-
-const globeContainer = css`
-    width: 100%;
-    color: ${legalTermsColor};
-    a {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px;
-        align-items: center;
-    }
-    span {
-        font-size: 12px;
-    }
-`;
-
-const otherLinks = css`
-    color: ${legalTermsColor};
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    ul {
-        margin: 0 45px 0 0;
-        padding: 0 0 0 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    li {
-        list-style: none;
-        display: inline-block;
-        line-height: normal;
-        letter-spacing: 0;
-        margin-right: 24px;
-        padding: 10px 0;
-        @media (min-width: ${mdScreen}) {
-            padding: 0;
-        }
-    }
-    span {
-        font-size: 10px;
-        margin-top: 10px;
-        @media (min-width: ${mdScreen}) {
-            margin-top: unset;
-            font-size: 12px;
-        }
-    }
-    @media (min-width: ${mdScreen}) {
-        align-items: unset;
-        padding: 20px 0;
-    }
-`;
-
 const FooterContainer = styled.footer`
     background: #000;
     padding: 50px 0 20px;
@@ -178,15 +48,138 @@ const FooterContainer = styled.footer`
     }
 `;
 
+const FooterNavigation = styled.nav`
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    @media (min-width: ${mdScreen}) {
+        width: 750px;
+        flex-direction: row;
+        gap: unset;
+        padding: 0;
+    }
+    @media (min-width: ${lgScreen}) {
+        width: 970px;
+    }
+    @media (min-width: ${xlScreen}) {
+        width: 1170px;
+    }
+`;
+
+const LogoContainer = styled.a`
+    padding: 0 15px;
+    display: block;
+    height: max-content;
+    @media (min-width: ${mdScreen}) {
+        width: 16.66666667%;
+    }
+`;
+
+const logo = css`
+    fill: currentColor;
+    display: inline-block;
+    height: 27px;
+    width: 89px;
+    @media (min-width: ${lgScreen}) {
+        height: 40px;
+        width: 132px;
+    }
+`;
+
+const NavigationLinksContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media (min-width: ${mdScreen}) {
+        flex-direction: row;
+        gap: 4rem;
+    }
+`;
+
+const SocialLogoContainer = styled.div`
+    display: flex;
+    gap: 20px;
+    margin: 120px 15px 15px;
+    @media (min-width: ${lgScreen}) {
+        margin: 0 15px 0 auto;
+    }
+`;
+
+const SocialMediaLogoContainer = styled.a`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: ${lightGrayColor};
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const GlobeContainer = styled.div`
+    width: 100%;
+    color: ${legalTermsColor};
+    a {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        align-items: center;
+    }
+    span {
+        font-size: 12px;
+    }
+`;
+
+const OtherLinks = styled.div`
+    color: ${legalTermsColor};
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    ul {
+        margin: 0 45px 0 0;
+        padding: 0 0 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        line-height: normal;
+        letter-spacing: 0;
+        margin-right: 24px;
+        padding: 10px 0;
+        @media (min-width: ${mdScreen}) {
+            padding: 0;
+        }
+    }
+    span {
+        font-size: 10px;
+        margin-top: 10px;
+        @media (min-width: ${mdScreen}) {
+            margin-top: unset;
+            font-size: 12px;
+        }
+    }
+    @media (min-width: ${mdScreen}) {
+        align-items: unset;
+        padding: 20px 0;
+    }
+`;
+
 export {
-    footerNavigation,
-    logoContainer,
+    FooterContainer,
+    FooterNavigation,
+    LogoContainer,
     logo,
-    navigationLinksContainer,
-    socialLogoContainer,
-    socialMediaLogo,
-    socialLogoImage,
-    otherLinks,
-    globeContainer,
-    FooterContainer
+    NavigationLinksContainer,
+    SocialLogoContainer,
+    SocialMediaLogoContainer,
+    OtherLinks,
+    GlobeContainer,
 };
