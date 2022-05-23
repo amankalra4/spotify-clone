@@ -1,6 +1,7 @@
-import { css } from "@emotion/css";
+import styled from "styled-components";
+import { ICommonButtonProps } from "./index";
 
-export const browserLink = css`
+export const BrowserLink = styled.a`
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
@@ -17,11 +18,10 @@ export const browserLink = css`
     }
 `;
 
-export const buttonText = (backgroundColor: string, textColor: string) => {
-    return css`
-        background-color: ${backgroundColor};
+export const ButtonText = styled.div<Omit<ICommonButtonProps, "text">>`
+        background-color: ${props => props.backgroundColor};
         transition: all 0.4s ease;
-        color: ${textColor};
+        color: ${props => props.textColor};
         border-radius: 500px;
         font-size: inherit;
         padding: 14px 32px;
@@ -31,5 +31,4 @@ export const buttonText = (backgroundColor: string, textColor: string) => {
         &:hover {
             transform: translate3D(0, -1px, 0) scale(1.03);
         }
-    `;
-};
+`;

@@ -1,17 +1,17 @@
 import { darkRedColor } from "../../../modules/libs/css-modules";
 import CommonButton from "../common-button";
-import { bottomContainer, header, title, footer } from "./styles";
+import { BottomContainer, Header, H1title, Footer } from "./styles";
 
 const BottomSection = () => (
-    <section className={bottomContainer}>
-        <header className={header}>
-            <h1 className={title}>Go Premium. Be happy.</h1>
+    <BottomContainer>
+        <Header>
+            <H1title>Go Premium. Be happy.</H1title>
             <CommonButton backgroundColor={darkRedColor} textColor="white" text="START FREE TRIAL" />
-            <footer className={footer}>
+            <Footer>
                 {"* Terms and conditions apply. Open only to users who haven't already tried Premium."}
-            </footer>
-        </header>
-    </section>
+            </Footer>
+        </Header>
+    </BottomContainer>
 );
 
 export default BottomSection;

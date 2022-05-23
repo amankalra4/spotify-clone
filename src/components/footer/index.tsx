@@ -11,7 +11,6 @@ import {
 } from "./styles";
 import Spotify from "../../../public/icons/spotify-logo.svg";
 import GlobeLogo from "../../../public/icons/globe-logo.svg";
-import Image from "next/image";
 import {
     communityLinks,
     companyLinks,
