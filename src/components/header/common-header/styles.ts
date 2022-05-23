@@ -1,11 +1,18 @@
-import { css } from "@emotion/css";
+import styled from "styled-components";
 import {
   hoverColor,
   lgScreen2,
   smScreen,
 } from "../../../modules/libs/css-modules";
 
-export const commonHeader = css`
+export const HeaderContainer = styled.div`
+  display: flex;
+  @media (max-width: ${lgScreen2}) {
+    flex-direction: column;
+  } ;
+`;
+
+export const CommonHeaderContainer = styled.a`
   font-weight: 700 !important;
   color: white !important;
   text-transform: none !important;
@@ -22,11 +29,4 @@ export const commonHeader = css`
   @media (max-width: ${smScreen}) {
     font-size: 30px !important;
   }
-`;
-
-export const headerContainer = css`
-  display: flex;
-  @media (max-width: ${lgScreen2}) {
-    flex-direction: column;
-  } ;
 `;

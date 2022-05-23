@@ -1,22 +1,22 @@
 import LargeScreenHeader from "../large-screen";
-import { headerData, largeScreen, mobile, headerContainer } from "./styles";
+import { HeaderContainer, HeaderData, LargeScreen, Mobile } from "./styles";
 import Spotify from "../../../../public/icons/spotify-logo.svg";
 import { spotifyLogo } from "../common-styles";
 import SimpleBackdrop from "../backdrop";
 
 const Header = () => {
   return (
-    <div className={headerContainer}>
-      <div className={headerData}>
+    <HeaderContainer>
+      <HeaderData>
         <Spotify className={spotifyLogo} />
-        <div className={largeScreen}>
+        <LargeScreen>
           <LargeScreenHeader />
-        </div>
-        <div className={mobile}>
+        </LargeScreen>
+        <Mobile>
           <SimpleBackdrop />
-        </div>
-      </div>
-    </div>
+        </Mobile>
+      </HeaderData>
+    </HeaderContainer>
   );
 };
 

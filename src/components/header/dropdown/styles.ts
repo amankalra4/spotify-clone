@@ -1,6 +1,6 @@
-import { css } from "@emotion/css";
+import styled from "styled-components";
 
-export const profileDropdown = css`
+export const ProfileDropdown = styled.div`
   .MuiSelect-filled {
     background: black;
     color: white;

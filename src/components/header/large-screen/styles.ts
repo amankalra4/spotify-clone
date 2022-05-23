@@ -1,11 +1,12 @@
 import { css } from "@emotion/css";
+import styled from "styled-components";
 import { hoverColor } from "../../../modules/libs/css-modules";
 
-export const childHeader = css`
+export const ChildHeader = styled.div`
   display: flex;
 `;
 
-export const dropDown = css`
+export const DropDown = styled.div`
   display: flex;
   align-items: center;
   font-weight: 700;

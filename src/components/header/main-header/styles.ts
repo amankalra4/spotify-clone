@@ -1,12 +1,12 @@
-import { css } from "@emotion/css";
+import styled from "styled-components";
 import { lgScreen, xlScreen } from "../../../modules/libs/css-modules";
 
-export const headerContainer = css`
+export const HeaderContainer = styled.div`
   background-color: black;
   font-weight: 700;
 `;
 
-export const headerData = css`
+export const HeaderData = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,13 +23,13 @@ export const headerData = css`
   }
 `;
 
-export const largeScreen = css`
+export const LargeScreen = styled.div`
   @media (max-width: ${lgScreen}) {
     display: none;
   }
 `;
 
-export const mobile = css`
+export const Mobile = styled.div`
   display: none;
   @media (max-width: ${lgScreen}) {
     display: block;
