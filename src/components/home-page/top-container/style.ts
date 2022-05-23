@@ -1,4 +1,4 @@
-import { css } from "@emotion/css";
+import styled from "styled-components";
 import {
   backgroundImageLargeScreen,
   backgroundImageMediumScreen,
@@ -12,7 +12,7 @@ import {
   xlScreen,
 } from "../../../modules/libs/css-modules";
 
-export const container = css`
+export const SectionContainer = styled.section`
   background-color: rgb(41, 65, 171);
   background-image: url(${backgroundImageSmallScreen});
   background-position: 65% 55%;
@@ -32,7 +32,7 @@ export const container = css`
   }
 `;
 
-export const centerSection = css`
+export const CenterSection = styled.article`
   min-height: 480px;
   margin: 0px auto;
   max-width: 100%;
@@ -50,7 +50,7 @@ export const centerSection = css`
   }
 `;
 
-export const content = css`
+export const Content = styled.div`
   padding: 48px 0px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@ export const content = css`
   }
 `;
 
-export const subHeading = css`
+export const SubHeading = styled.h2`
   display: block;
   margin: 16px 0px;
   font-size: 18px;
@@ -103,7 +103,7 @@ export const subHeading = css`
   }
 `;
 
-export const bottomContent = css`
+export const BottomContent = styled.div`
   margin: 0px;
   @media (min-width: ${mdScreen}) {
     margin: 48px 0px 0px;

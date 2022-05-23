@@ -3,10 +3,10 @@ import Backdrop from "@mui/material/Backdrop";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
-  account,
-  backdrop,
+  Account,
+  BackdropContainer,
   closeIcon,
-  hamMenuContainer,
+  HamMenuContainer,
   menuIcon,
   myProfileIcon,
 } from "./styles";
@@ -15,6 +15,7 @@ import CommonHeader from "../common-header";
 import { divider, spotifyLogo } from "../common-styles";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Spotify from "../../../../public/icons/spotify-logo.svg";
+import Dropdown from "../dropdown";
 
 export default function SimpleBackdrop() {
   const [open, setOpen] = React.useState(false);
@@ -26,7 +27,7 @@ export default function SimpleBackdrop() {
   };
 
   return (
-    <div className={backdrop}>
+    <BackdropContainer>
       <AccountCircleIcon className={myProfileIcon} />
       <MenuIcon fontSize="large" className={menuIcon} onClick={handleToggle} />
       <Backdrop
@@ -36,7 +37,7 @@ export default function SimpleBackdrop() {
         }}
         open={open}
       >
-        <div className={hamMenuContainer}>
+        <HamMenuContainer>
           <div>
             <CloseIcon
               fontSize="large"
@@ -45,14 +46,14 @@ export default function SimpleBackdrop() {
             />
             <CommonHeader />
             <Divider variant="middle" flexItem={true} className={divider} />
-            <div className={account}>
+            <Account>
               <p>Account</p>
               <p>Log out</p>
-            </div>
+            </Account>
           </div>
           <Spotify className={spotifyLogo} />
-        </div>
+        </HamMenuContainer>
       </Backdrop>
-    </div>
+    </BackdropContainer>
   );
 }

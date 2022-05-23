@@ -1,11 +1,12 @@
 import { css } from "@emotion/css";
+import styled from "styled-components";
 import {
   grayColor,
   hoverColor,
   smScreen,
 } from "../../../modules/libs/css-modules";
 
-export const backdrop = css`
+export const BackdropContainer = styled.div`
   position: relative;
   .MuiBackdrop-root {
     color: white;
@@ -15,7 +16,7 @@ export const backdrop = css`
   }
 `;
 
-export const account = css`
+export const Account = styled.div`
   font-weight: 400;
   font-size: 28px;
   color: ${grayColor};
@@ -31,7 +32,7 @@ export const account = css`
   }
 `;
 
-export const hamMenuContainer = css`
+export const HamMenuContainer = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -56,6 +57,7 @@ export const closeIcon = css`
 export const myProfileIcon = css`
   font-size: 2.5rem !important;
   color: white;
+  padding-top: 5px;
 `;
 
 export const menuIcon = css`
