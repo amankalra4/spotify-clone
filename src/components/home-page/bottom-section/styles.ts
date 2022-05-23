@@ -1,13 +1,13 @@
-import { css } from "@emotion/css";
-import { lgScreen, mdScreen, xlScreen, smScreen, darkRedColor, lighRedHomeBackground } from "../../../modules/libs/css-modules";
+import styled from "styled-components";
+import { lgScreen, mdScreen, smScreen, darkRedColor, lighRedHomeBackground } from "../../../modules/libs/css-modules";
 
-const bottomContainer = css`
+const BottomContainer = styled.section`
     background-color: ${lighRedHomeBackground};
     color: ${darkRedColor};
     padding: 150px 0;
 `;
 
-const header = css`
+const Header = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@ const header = css`
     text-align: center;
 `;
 
-const title = css`
+const H1title = styled.h1`
     margin: 0px;
     padding: 0px;
     font-size: calc(24px + 24 * ((100vw - 320px) / 160));
@@ -33,7 +33,7 @@ const title = css`
     }
 `;
 
-const footer = css`
+const Footer = styled.footer`
     font-size: 12px;
     margin-top: 40px;
     font-weight: 400;
@@ -43,4 +43,4 @@ const footer = css`
     width: 90%;
 `;
 
-export { bottomContainer, header, title, footer };
+export { BottomContainer, Header, H1title, Footer };
