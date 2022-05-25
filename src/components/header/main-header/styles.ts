@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { lgScreen, xlScreen } from "../../../modules/libs/css-modules";
+import { lgScreen, xlScreen } from "@modules/libs/css-modules";
 
 export const HeaderContainer = styled.div`
   background-color: black;

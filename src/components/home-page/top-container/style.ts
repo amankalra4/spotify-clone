@@ -1,52 +1,26 @@
 import styled from "styled-components";
 import {
-  backgroundImageLargeScreen,
-  backgroundImageMediumScreen,
-  backgroundImageSmallScreen,
-} from "../../../constants";
-import {
   hoverColor,
-  lgScreen,
   mdScreen,
   smScreen,
   xlScreen,
-} from "../../../modules/libs/css-modules";
+} from "@modules/libs/css-modules";
 
 export const SectionContainer = styled.section`
+  position: relative;
   background-color: rgb(41, 65, 171);
-  background-image: url(${backgroundImageSmallScreen});
-  background-position: 65% 55%;
-  background-size: auto 177%;
-  background-repeat: no-repeat;
-
-  @media (min-width: ${mdScreen}) {
-    background-image: url(${backgroundImageMediumScreen});
-    background-position: center center;
-    background-size: auto 181%;
-  }
-
-  @media (min-width: ${xlScreen}) {
-    background-size: auto 100%;
-    background-image: url(${backgroundImageLargeScreen});
-    background-position: right center;
-  }
 `;
 
 export const CenterSection = styled.article`
   min-height: 480px;
-  margin: 0px auto;
-  max-width: 100%;
   color: ${hoverColor};
-  padding: 0px 15px;
+  display: grid;
+  justify-items: center;
+  width: 100%;
   @media (min-width: ${mdScreen}) {
-    min-height: 500px;
-    width: 750px;
-  }
-  @media (min-width: ${lgScreen}) {
-    width: 970px;
-  }
-  @media (min-width: ${xlScreen}) {
-    width: 1170px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: unset;
+    width: unset;
   }
 `;
 
@@ -58,7 +32,7 @@ export const Content = styled.div`
   justify-content: space-between;
   @media (min-width: ${xlScreen}) {
     padding: 64px 0px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   > h1 {
@@ -107,5 +81,15 @@ export const BottomContent = styled.div`
   margin: 0px;
   @media (min-width: ${mdScreen}) {
     margin: 48px 0px 0px;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  width: 100%;
+  @media (min-width: ${mdScreen}) {
+    width: unset;
+  }
+  > img {
+    object-fit: cover;
   }
 `;

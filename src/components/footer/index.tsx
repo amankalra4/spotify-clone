@@ -2,7 +2,7 @@ import {
     FooterContainer,
     FooterNavigation,
     GlobeContainer,
-    logo,
+    FooterLogo,
     LogoContainer,
     NavigationLinksContainer,
     OtherLinks,
@@ -22,7 +22,9 @@ import {
 
 const Logo = () => (
     <LogoContainer>
-        <Spotify className={logo} />
+        <FooterLogo>
+            <Spotify />
+        </FooterLogo>
     </LogoContainer>
 );
 

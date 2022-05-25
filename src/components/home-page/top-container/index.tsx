@@ -1,4 +1,5 @@
-import { darkBlueColor, hoverColor } from "../../../modules/libs/css-modules";
+/* eslint-disable @next/next/no-img-element */
+import { darkBlueColor, hoverColor } from "@modules/libs/css-modules";
 import CommonButton from "../common-button";
 import {
   BottomContent,
@@ -6,7 +7,9 @@ import {
   Content,
   SectionContainer,
   SubHeading,
+  ImageContainer,
 } from "./style";
+import { backgroundImageLargeScreen } from "@constants/index";
 
 const TopSection = () => {
   const webPlayerText = "Open Web Player";
@@ -21,9 +24,19 @@ const TopSection = () => {
               backgroundColor={hoverColor}
               textColor={darkBlueColor}
               text={webPlayerText}
+              link="/your-plans"
             />
           </BottomContent>
         </Content>
+        <ImageContainer>
+          <img
+            src={backgroundImageLargeScreen}
+            alt="spotify-clone-home-page-background"
+            width="100%"
+            height="100%"
+            loading="eager"
+          />
+        </ImageContainer>
       </CenterSection>
     </SectionContainer>
   );

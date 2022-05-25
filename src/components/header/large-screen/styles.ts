@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "styled-components";
-import { hoverColor } from "../../../modules/libs/css-modules";
+import { hoverColor } from "@modules/libs/css-modules";
 
 export const ChildHeader = styled.div`
   display: flex;
