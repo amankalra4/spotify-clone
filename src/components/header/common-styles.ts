@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import styled from "styled-components";
-import { lgScreen, lgScreen2 } from "../../modules/libs/css-modules";
+import { lgScreen, lgScreen2 } from "@modules/libs/css-modules";
 
 export const divider = css`
   border-color: white !important;

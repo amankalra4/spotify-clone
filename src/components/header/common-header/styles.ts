@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-  hoverColor,
-  lgScreen2,
-  smScreen,
-} from "../../../modules/libs/css-modules";
+import { hoverColor, lgScreen2, smScreen } from "@modules/libs/css-modules";
 
 export const HeaderContainer = styled.div`
   display: flex;
