@@ -1,4 +1,3 @@
-import { css } from "@emotion/css";
 import styled from "styled-components";
 import { hoverColor, legalTermsColor, lgScreen, lightGrayColor, mdScreen, xlScreen } from "../../modules/libs/css-modules";
 
@@ -79,7 +78,7 @@ const LogoContainer = styled.a`
     }
 `;
 
-const logo = css`
+const FooterLogo = styled.svg`
     fill: currentColor;
     display: inline-block;
     height: 27px;
@@ -176,7 +175,7 @@ export {
     FooterContainer,
     FooterNavigation,
     LogoContainer,
-    logo,
+    FooterLogo,
     NavigationLinksContainer,
     SocialLogoContainer,
     SocialMediaLogoContainer,

@@ -4,6 +4,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ["content-tooling.spotifycdn.com"]
+  },
   webpack: (config) => {
     config.module.rules.push({
         test: /\.svg$/,

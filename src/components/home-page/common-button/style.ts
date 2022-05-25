@@ -7,6 +7,7 @@ export const BrowserLink = styled.a`
     font-weight: 700;
     border-radius: 500px;
     padding: 0px;
+    cursor: pointer;
     @media (min-width: 768px) {
         font-size: 14px;
         line-height: 20px;
@@ -18,7 +19,7 @@ export const BrowserLink = styled.a`
     }
 `;
 
-export const ButtonText = styled.div<Omit<ICommonButtonProps, "text">>`
+export const ButtonText = styled.div<Omit<ICommonButtonProps, "text" | "link">>`
         background-color: ${props => props.backgroundColor};
         transition: all 0.4s ease;
         color: ${props => props.textColor};

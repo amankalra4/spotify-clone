@@ -5,10 +5,11 @@ export interface ICommonButtonProps {
   text: string;
   backgroundColor: string;
   textColor: string;
+  link: string;
 }
 
-const CommonButton = ({ text, backgroundColor, textColor }: ICommonButtonProps) => (
-  <Link href="#">
+const CommonButton = ({ text, backgroundColor, textColor, link }: ICommonButtonProps) => (
+  <Link href={link}>
     <BrowserLink>
       <ButtonText backgroundColor={backgroundColor} textColor={textColor}>
         <span>{text}</span>

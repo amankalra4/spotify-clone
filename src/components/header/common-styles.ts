@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import styled from "styled-components";
 import { lgScreen, lgScreen2 } from "../../modules/libs/css-modules";
 
 export const divider = css`
@@ -12,7 +13,7 @@ export const divider = css`
   }
 `;
 
-export const spotifyLogo = css`
+export const SpotifyLogo = styled.svg`
   fill: white;
   display: inline-block;
   height: 27px;

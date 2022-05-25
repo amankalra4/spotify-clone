@@ -6,7 +6,7 @@ const BottomSection = () => (
     <BottomContainer>
         <Header>
             <H1title>Go Premium. Be happy.</H1title>
-            <CommonButton backgroundColor={darkRedColor} textColor="white" text="START FREE TRIAL" />
+            <CommonButton backgroundColor={darkRedColor} textColor="white" text="START FREE TRIAL" link="/your-plans" />
             <Footer>
                 {"* Terms and conditions apply. Open only to users who haven't already tried Premium."}
             </Footer>
