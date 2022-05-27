@@ -1,23 +1,23 @@
-import { ChildHeader, DropDown, profileIcon } from "./styles";
+import { ChildHeader, DropDown } from "./styles";
 import Divider from "@mui/material/Divider";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import CommonHeader from "../common-header";
 import Dropdown from "../dropdown";
-import { divider } from "../common-styles";
+import { DividerContainer } from "../common-styles";
 
 const LargeScreenHeader = () => {
   return (
     <ChildHeader>
       <CommonHeader />
-      <Divider
-        orientation="vertical"
-        variant="middle"
-        flexItem={true}
-        className={divider}
-      />
-
+      <DividerContainer>
+        <Divider
+          orientation="vertical"
+          variant="middle"
+          flexItem={true}
+        />
+      </DividerContainer>
       <DropDown>
-        <AccountCircleIcon className={profileIcon} />
+        <AccountCircleIcon fontSize="large" />
         <Dropdown />
       </DropDown>
     </ChildHeader>

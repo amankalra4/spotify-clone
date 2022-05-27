@@ -18,7 +18,7 @@ export const CenterSection = styled.article`
   justify-items: center;
   width: 100%;
   @media (min-width: ${mdScreen}) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     justify-items: unset;
     width: unset;
   }

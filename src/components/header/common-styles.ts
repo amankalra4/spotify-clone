@@ -1,25 +1,26 @@
-import { css } from "@emotion/css";
 import styled from "styled-components";
-import { lgScreen, lgScreen2 } from "@modules/libs/css-modules";
+import { lgScreen } from "@modules/libs/css-modules";
 
-export const divider = css`
-  border-color: white !important;
-  height: 16px !important;
-  margin: auto 17px !important;
-  @media (max-width: ${lgScreen2}) {
-    margin: 18px 0 40px !important;
-    height: 2px !important;
-    width: 20px !important;
-  }
+export const DividerContainer = styled.div`
+    > hr {
+        width: 20px;
+        border: 2px solid white;
+        margin: 20px 0;
+        @media (min-width: ${lgScreen}) {
+          height: 30px;
+          width: unset;
+          border: 1px solid white;
+        }
+    }
 `;
 
 export const SpotifyLogo = styled.svg`
-  fill: white;
-  display: inline-block;
-  height: 27px;
-  width: 89px;
-  @media (min-width: ${lgScreen}) {
-    height: 40px;
-    width: 132px;
-  }
+    fill: white;
+    display: inline-block;
+    height: 27px;
+    width: 89px;
+    @media (min-width: ${lgScreen}) {
+        height: 40px;
+        width: 132px;
+    }
 `;

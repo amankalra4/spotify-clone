@@ -5,7 +5,9 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head></Head>
+                <Head>
+                 <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />
