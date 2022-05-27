@@ -18,6 +18,7 @@ export const Account = styled.div`
   font-weight: 400;
   font-size: 28px;
   color: ${grayColor};
+  width: max-content;
   > p {
     cursor: pointer;
     &:hover {
