@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextApiRequest, NextApiResponse } from "next";
 import axios, { AxiosResponse } from "axios";
 import { corsWrapper } from "../../src/modules/backend/cors-wrapper";

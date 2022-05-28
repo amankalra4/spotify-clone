@@ -13,10 +13,10 @@ const Second = () => {
     const getData1 = async (code: string, state: string) => {
         const res = await fetch(`/api/get-token?code=${code}&state=${state}`);
         const data: TokenResponse = await res.json();
-        console.log('data: ', data);
-        const x = await fetch(`/api/refresh-token?refresh_token=${data.data.refresh_token}`)
+        console.log("data: ", data);
+        const x = await fetch(`/api/refresh-token?refresh_token=${data.data.refresh_token}`);
         const data1 = await x.json();
-        console.log('data: ', data1);
+        console.log("data: ", data1);
     };
 
     return <div>hii</div>;
