@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextApiRequest, NextApiResponse } from "next";
 import axios, { AxiosResponse } from "axios";
 import { corsWrapper } from "../../src/modules/backend/cors-wrapper";
@@ -7,7 +8,7 @@ import { RefreshTokenResponse } from "../../src/modules/interface/get-access-tok
 export default async function getRefreshedToken(apiRequest: NextApiRequest, apiResponse: NextApiResponse) {
     await corsWrapper(apiRequest, apiResponse);
     const refreshToken = apiRequest.query.refresh_token as string;
-    
+
     const params = new URLSearchParams();
     params.append("grant_type", "refresh_token");
     params.append("refresh_token", refreshToken);
