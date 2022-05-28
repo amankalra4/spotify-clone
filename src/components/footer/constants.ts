@@ -1,3 +1,5 @@
+import { Facebook, Instagram, SvgIconComponent, Twitter } from "@mui/icons-material";
+
 export type FooterLinks = {
     heading: string;
     subtitles: string[];
@@ -27,21 +29,21 @@ export const usefulLinks: FooterLinks = [
 export const otherFooterLinks = ["Legal", "Privacy Center", "Privacy Policy", "Cookies", "About Ads"];
 
 export type ISocialMediaLogoData = {
-    src: string;
-    alt: string;
-}[];
+    Icon: SvgIconComponent
+    id: string;
+};
 
-export const socialMediaLogoData: ISocialMediaLogoData = [
+export const socialMediaLogoData: Array<ISocialMediaLogoData> = [
     {
-        src: "/icons/instagram-logo.svg",
-        alt: "spotify-clone-instagram-logo"
+        Icon: Facebook,
+        id: "facebook"
     },
     {
-        src: "/icons/twitter-logo.svg",
-        alt: "spotify-clone-twitter-logo"
+        Icon: Instagram,
+        id: "instagram"
     },
     {
-        src: "/icons/facebook-logo.svg",
-        alt: "spotify-clone-facebook-logo"
+        Icon: Twitter,
+        id: "twitter"
     }
 ];
