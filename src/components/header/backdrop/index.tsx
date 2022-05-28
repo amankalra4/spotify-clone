@@ -16,7 +16,6 @@ export default function SimpleBackdrop() {
     const handleToggle = () => {
         setOpen(!open);
     };
-
     return (
         <BackdropContainer>
             <MyProfileIcon>
