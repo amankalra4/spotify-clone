@@ -21,13 +21,7 @@ const TopSection = () => {
                     </BottomContent>
                 </Content>
                 <ImageContainer>
-                    <img
-                        src={backgroundImageLargeScreen}
-                        alt="spotify-clone-home-page-background"
-                        width="100%"
-                        height="100%"
-                        loading="eager"
-                    />
+                    <img src={backgroundImageLargeScreen} alt="spotify-clone-home-page-background" width="100%" height="100%" />
                 </ImageContainer>
             </CenterSection>
         </SectionContainer>
