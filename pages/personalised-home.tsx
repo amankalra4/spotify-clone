@@ -1,8 +1,8 @@
+import { TokenResponse } from "@modules/interface/get-access-token-interface";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { TokenResponse } from "../src/modules/interface/get-access-token-interface";
 
-const Second = () => {
+const PersonalisedHome = () => {
     const { query } = useRouter();
     useEffect(() => {
         if (query.code) {
@@ -19,7 +19,7 @@ const Second = () => {
         console.log("data: ", data1);
     };
 
-    return <div>hii</div>;
+    return <div>Hiii</div>;
 };
 
-export default Second;
+export default PersonalisedHome;

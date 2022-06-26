@@ -7,9 +7,12 @@ import CommonHeader from "../common-header";
 import { SpotifyLogo, DividerContainer } from "../common-styles";
 import { AccountCircle, Menu } from "@mui/icons-material";
 import Spotify from "../../../../public/icons/spotify-logo.svg";
+import LoginLink from "../login-link";
+import useGetCookie from "@src/modules/libs/use-get-cookie";
 
 export default function SimpleBackdrop() {
     const [open, setOpen] = React.useState(false);
+    const { cookieData } = useGetCookie();
     const handleClose = () => {
         setOpen(false);
     };
@@ -39,10 +42,16 @@ export default function SimpleBackdrop() {
                         <DividerContainer>
                             <Divider variant="middle" flexItem={true} />
                         </DividerContainer>
-                        <Account>
-                            <p>Account</p>
-                            <p>Log out</p>
-                        </Account>
+                        {cookieData ? (
+                            <Account>
+                                <p>Account</p>
+                                <p>Log out</p>
+                            </Account>
+                        ) : (
+                            <Account>
+                                <LoginLink />
+                            </Account>
+                        )}
                     </Container>
                     <SpotifyLogo>
                         <Spotify />
